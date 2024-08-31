@@ -1,0 +1,33 @@
+
+<html>
+<head>
+    <title>Two Steps</title>
+    
+    <link rel="shortcut icon" href="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/512/external-stock-investing-flaticons-lineal-color-flat-icons.png" type="image/x-icon">
+</head>
+<link rel="stylesheet" href="https://bootswatch.com/5/solar/bootstrap.min.css">
+<body style="margin: 0px; padding: 0px; position: relative;">
+    <div style="background-image:url('https://cdnlearnblog.etmoney.com/wp-content/uploads/2023/02/investing-at-market-high-1.jpg'); height: 100%; width: 100%; opacity: .9; margin: 0; padding: 0%;background-size: cover; background-position: -100px -10px;" >
+        <h1 style="color: azure; margin-left: 10px; padding: 5px; margin-bottom: 5; " >N steps option pricing calculator</h1>
+        <div style="margin-bottom: 10px;">
+            <a style="text-decoration: none; border: 2px; border-style: solid; border-radius: 2px; margin-bottom: 40px; color: azure;margin-left: 20px;padding: 5px;margin-bottom: 20;" href="/">Home</a>
+        </div>
+<form style="color: azure;margin-left: 20px;padding: 0px;" action="", method="POST">
+    {% csrf_token %}
+    {{n.as_p}}
+    <input type="submit" value="submit">
+</form>
+
+<div style="color: azure;margin-left: 20px;padding: 0px;">
+    <h3>Result:</h3>
+</div>
+<div style="color: azure;margin-left: 20px;padding: 0px; font-size: large;">
+    Put: {{put}}
+</div>
+<div style="color: azure;margin-left: 20px;padding: 0px; font-size: large;">
+    Call: {{call}}
+</div>
+
+    </div>
+</body>
+</html>
